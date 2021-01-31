@@ -1,6 +1,6 @@
 ﻿# Projet Avalon
 
-<h1>T�ches � faire</h1>
+<h1>Tâches à faire</h1>
 
 - [X] Fix Main form
 - [ ] Nettoyage du code (Regions)
