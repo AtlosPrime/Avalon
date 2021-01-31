@@ -1,2 +1,1 @@
-# Projet Avalon
-
+# [Projet Avalon](../master/Avalon/README.md)
