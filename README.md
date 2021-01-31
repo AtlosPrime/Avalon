@@ -1,1 +1,1 @@
-# [Projet Avalon](../Avalon/Readme)
+# [Projet Avalon](../blob/master/Avalon/Readme)
