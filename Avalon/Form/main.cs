@@ -89,7 +89,6 @@ public partial class Main_Form : Form
         #region Menu2Btn
         private void Btn2menu1opt(object sender, EventArgs e)
         {
-            OpenChildForm(new Wifi_Form());
             Cachesubmenu();
         }
 

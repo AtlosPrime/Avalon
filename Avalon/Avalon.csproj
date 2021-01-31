@@ -57,16 +57,16 @@
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>63841768A652B54C266E2C5B6AFABCC21DC5CE1C</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>07BB5A8516FC0728C397EADD9D7571CB73302102</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>Avalon_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>
@@ -166,6 +166,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Avalon.manifest" />
+    <None Include="Avalon_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -197,6 +198,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="README.md" />
     <None Include="Resources\Transparence PARFAIT rogner.png" />
     <None Include="Resources\ufopedia-main.png" />
     <None Include="Resources\Ufopedia.ico" />
@@ -204,9 +206,7 @@
     <None Include="Resources\Transparence PARFAIT rogner.ico" />
     <None Include="Resources\ufopedia_back.png" />
     <None Include="Resources\356a9d059d22153a8644444ebb2e5ea3.jpg" />
-    <Content Include="Transparence PARFAIT rogner.ico" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
