@@ -4,7 +4,5 @@
 
 - [X] Fix Main form
 - [ ] Nettoyage du code (Regions)
-- [ ] [Terminer section "Optimisation selon CAPET"](https://docs.google.com/document/d/1i4LjuuLipLX-KsAxw3XLVrAVDnkgs4_tzlxecsJYMa4/edit?ouid=110336874143640900974&usp=docs_home&ths=true)
+- [X] [Terminer section "Optimisation selon CAPET"](https://docs.google.com/document/d/1i4LjuuLipLX-KsAxw3XLVrAVDnkgs4_tzlxecsJYMa4/edit?ouid=110336874143640900974&usp=docs_home&ths=true)
 - [ ] Fix registre démarrage
-
-Test FDP
