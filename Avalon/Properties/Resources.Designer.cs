@@ -101,16 +101,6 @@ namespace Avalon.Properties {
         }
         
         /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ufopedia_main {
-            get {
-                object obj = ResourceManager.GetObject("ufopedia-main", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Recherche une chaîne localisée semblable à 0.0.0.
         /// </summary>
         internal static string version {

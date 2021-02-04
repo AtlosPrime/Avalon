@@ -33,6 +33,8 @@ namespace Avalon
             label2.Text = ("Système d'exploitation : " + Version + " build " + build);
         }
 
+        
+
         private void InfoGform_load(object sender, EventArgs e)
         {
 
@@ -72,6 +74,21 @@ namespace Avalon
         }
 
         private void Label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
         {
 
         }
