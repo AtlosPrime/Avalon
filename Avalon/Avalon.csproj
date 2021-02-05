@@ -87,12 +87,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form\Submain\Menu1\Bios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\Submain\Menu1\Bios.Designer.cs">
-      <DependentUpon>Bios.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form\Submain\Menu2\Opti.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,9 +140,6 @@
     <EmbeddedResource Include="Form\About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Submain\Menu1\Bios.resx">
-      <DependentUpon>Bios.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form\Submain\Menu2\Opti.resx">
       <DependentUpon>Opti.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,7 +166,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Avalon.manifest" />
-    <None Include="Avalon_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -209,11 +199,8 @@
   <ItemGroup>
     <None Include="README.md" />
     <None Include="Resources\Transparence PARFAIT rogner.png" />
-    <None Include="Resources\Ufopedia.ico" />
     <None Include="Resources\Icon1.ico" />
     <None Include="Resources\Transparence PARFAIT rogner.ico" />
-    <None Include="Resources\ufopedia_back.png" />
-    <None Include="Resources\356a9d059d22153a8644444ebb2e5ea3.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ufopedia_back.jpg" />

@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,7 +48,6 @@
             this.Exit_Btn = new System.Windows.Forms.Button();
             this.Label = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
             this.InfoSys_groupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -75,6 +75,7 @@
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -85,6 +86,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label6);
@@ -93,6 +95,12 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter_1);
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label4
             // 
@@ -114,7 +122,6 @@
             // 
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.groupBox2);
             this.panel2.Controls.Add(this.InfoSys_groupBox);
             this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Name = "panel2";
@@ -143,16 +150,19 @@
             // 
             resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
             resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // Exit_Btn
             // 
@@ -177,12 +187,6 @@
             this.panel1.Controls.Add(this.Label);
             this.panel1.Controls.Add(this.Exit_Btn);
             this.panel1.Name = "panel1";
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // InfoG_Form
             // 

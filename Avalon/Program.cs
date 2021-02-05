@@ -27,7 +27,7 @@ namespace Avalon
 
             }
 
-            RegistryKey key = Registry.CurrentUser.OpenSubKey(@"SOFTWARE")
+            RegistryKey key = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Avalon")
 ;
             if (Convert.ToInt32(key.GetValue("Termsaccepted")) == 1)
             {
