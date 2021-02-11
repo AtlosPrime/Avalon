@@ -12,7 +12,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Win32;
 
-
 namespace Avalon
 {
     public partial class InfoG_Form : Form
@@ -37,20 +36,15 @@ namespace Avalon
             }
             else
             {
-                label2.Text = ("NetBIOS : " + ACN + " (" + CN + ")" );
+                label2.Text = ("NetBIOS : " + ACN + " (" + CN + ")");
                 label2.ForeColor = Color.Yellow;
                 label2.Cursor = System.Windows.Forms.Cursors.Hand;
             }
-            
-
-
-
 
             RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows NT\CurrentVersion");
             var _UBR = key.GetValue("UBR").ToString();
             var _CurrentBuild = key.GetValue("CurrentBuild").ToString();
             string build = _CurrentBuild + "." + _UBR; // build
-
 
             var key1 = Registry.LocalMachine.OpenSubKey(@"SYSTEM\CurrentControlSet\Control\Session Manager\Environment");
             if (key1 == null)
@@ -63,13 +57,8 @@ namespace Avalon
 
             }
 
-
-
             string Version = (string)Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion", "ProductName", null); // Version = Windows 'int' 'edition'
             label1.Text = ("Système d'exploitation : " + Version + " build " + build);
-
-
-
 
             string sys_man = (string)Registry.GetValue(@"HKEY_LOCAL_MACHINE\SYSTEM\HardwareConfig\Current", "SystemManufacturer", null);
             label7.Text = ("System Manufacturer : " + sys_man);
@@ -82,8 +71,6 @@ namespace Avalon
 
         }
 
-        
-
         private void InfoGform_load(object sender, EventArgs e)
         {
 
@@ -93,7 +80,6 @@ namespace Avalon
         {
             this.Close();
         }
-
 
         public static void DisplayDnsConfiguration()
         {
@@ -160,7 +146,7 @@ namespace Avalon
 
         private void label2_Click(object sender, EventArgs e)
         {
-            
+            MessageBox.Show("Voulez vous changer le nom de votre ordinateur.", "Êtes vous sûr?", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
         }
     }
 }

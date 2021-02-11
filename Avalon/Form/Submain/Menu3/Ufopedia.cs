@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
@@ -26,7 +20,11 @@ namespace Avalon
 
         private void Ufopedia_Form_Load(object sender, EventArgs e)
         {
-
+            this.SetStyle(
+                System.Windows.Forms.ControlStyles.UserPaint |
+                System.Windows.Forms.ControlStyles.AllPaintingInWmPaint |
+                System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer,
+                true);
         }
 
         private void Exit_Btn_Click(object sender, EventArgs e)
@@ -38,8 +36,8 @@ namespace Avalon
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog
             {
-                InitialDirectory = @"D:\",
-                Title = "Browse Text Files",
+              InitialDirectory = @"D:\",
+              Title = "Browse Text Files",
 
                 CheckFileExists = true,
                 CheckPathExists = true,
@@ -102,7 +100,7 @@ namespace Avalon
 
         private void label1_Click(object sender, EventArgs e)
         {
-         
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -163,4 +161,3 @@ namespace Avalon
         }
     }
 }
-

@@ -53,6 +53,7 @@ namespace Avalon
             this.label1.TabIndex = 0;
             this.label1.Text = "Super Hidden Connard Panel";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // StealProfile_Btn
             // 

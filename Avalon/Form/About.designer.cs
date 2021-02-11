@@ -43,9 +43,9 @@
             this.textLabel1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.textLabel1.Location = new System.Drawing.Point(160, 15);
             this.textLabel1.Name = "textLabel1";
-            this.textLabel1.Size = new System.Drawing.Size(57, 21);
+            this.textLabel1.Size = new System.Drawing.Size(154, 21);
             this.textLabel1.TabIndex = 3;
-            this.textLabel1.Text = "label1";
+            this.textLabel1.Text = "Avalon mais modif";
             this.textLabel1.Click += new System.EventHandler(this.TextLabel1_Click);
             // 
             // linkLabel1
@@ -89,9 +89,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label1.Location = new System.Drawing.Point(162, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.Size = new System.Drawing.Size(120, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
+            this.label1.Text = "Version + copy + date";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // About_Form
@@ -114,6 +114,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "About";
+            this.Load += new System.EventHandler(this.About_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

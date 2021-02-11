@@ -36,22 +36,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.Exit_Btn = new System.Windows.Forms.Button();
             this.Label = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.InfoSys_groupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,6 +73,7 @@
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Name = "label2";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
@@ -101,39 +101,6 @@
             resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
             this.label10.Click += new System.EventHandler(this.label10_Click);
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // panel2
-            // 
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.InfoSys_groupBox);
-            this.panel2.Controls.Add(this.groupBox1);
-            this.panel2.Name = "panel2";
-            // 
-            // button8
-            // 
-            resources.ApplyResources(this.button8, "button8");
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.ForeColor = System.Drawing.Color.LightGray;
-            this.button8.Name = "button8";
-            this.button8.UseVisualStyleBackColor = false;
             // 
             // groupBox2
             // 
@@ -163,6 +130,29 @@
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
             this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // panel2
+            // 
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Controls.Add(this.InfoSys_groupBox);
+            this.panel2.Controls.Add(this.groupBox1);
+            this.panel2.Name = "panel2";
             // 
             // Exit_Btn
             // 
@@ -202,9 +192,9 @@
             this.InfoSys_groupBox.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -229,7 +219,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label10;
     }
 }

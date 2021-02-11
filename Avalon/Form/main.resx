@@ -871,13 +871,13 @@
     <value>0, 28</value>
   </data>
   <data name="LabelAvalonversion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 17</value>
+    <value>55, 17</value>
   </data>
   <data name="LabelAvalonversion.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
   <data name="LabelAvalonversion.Text" xml:space="preserve">
-    <value>Avalon 0.0.0</value>
+    <value>Avalon </value>
   </data>
   <data name="&gt;&gt;LabelAvalonversion.Name" xml:space="preserve">
     <value>LabelAvalonversion</value>

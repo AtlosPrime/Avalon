@@ -10,7 +10,12 @@ namespace Avalon
             InitializeComponent();
 
             textLabel1.Text = "Avalon";
-            label1.Text = "Version 0.0.0\n\nCopyright \u00A9 " + DateTime.Now.Year + "\nAtlos_Prime";
+            label1.Text = "Version : " +  global::Avalon.Properties.Resources.version + "\nCopyright \u00A9 " + DateTime.Now.Year + "\nAtlos_Prime";
+        }
+
+        private void About_Form_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -38,5 +43,6 @@ namespace Avalon
         {
 
         }
+
     }
 }

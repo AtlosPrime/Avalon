@@ -1,16 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Avalon
 {
-public partial class Main_Form : Form
+    public partial class Main_Form : Form
     {
 
         public Main_Form()
@@ -19,6 +12,8 @@ public partial class Main_Form : Form
             Cachesubmenu();
 
             this.FormBorderStyle = FormBorderStyle.None;
+
+            LabelAvalonversion.Text = ("Avalon " + global::Avalon.Properties.Resources.version);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -27,7 +22,8 @@ public partial class Main_Form : Form
         }
 
         #region Methodes
-        private Form activeForm = default;
+        private Form activeForm =
+          default;
         private void Cachesubmenu()
         {
             Menu1_Panel.Visible = false;
@@ -127,7 +123,6 @@ public partial class Main_Form : Form
         {
 
         }
-
 
         private void MainPanel_Panel1(object sender, PaintEventArgs e)
         {

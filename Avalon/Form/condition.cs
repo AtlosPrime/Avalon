@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Win32;
 
@@ -26,16 +20,14 @@ namespace Avalon
 
         }
 
-
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             if (acceptedTerms == false)
             {
-                Environment.Exit(0); 
+                Environment.Exit(0);
             }
         }
 
-        
         private void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -56,8 +48,6 @@ namespace Avalon
                 MessageBox.Show("Vous devez acceptez les termes et les conditions pour pouvoir utiliser ce programme.", "Termes et Conditions", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
             }
         }
-
-
 
         private void RichTextBox1_TextChanged(object sender, EventArgs e)
         {
