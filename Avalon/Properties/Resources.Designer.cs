@@ -83,6 +83,16 @@ namespace Avalon.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TPRicon {
+            get {
+                object obj = ResourceManager.GetObject("TPRicon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ufopedia_back {
             get {
                 object obj = ResourceManager.GetObject("ufopedia_back", resourceCulture);

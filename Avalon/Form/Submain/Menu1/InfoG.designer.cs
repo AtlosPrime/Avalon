@@ -156,9 +156,9 @@
             // 
             // Exit_Btn
             // 
+            resources.ApplyResources(this.Exit_Btn, "Exit_Btn");
             this.Exit_Btn.FlatAppearance.BorderSize = 0;
             this.Exit_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            resources.ApplyResources(this.Exit_Btn, "Exit_Btn");
             this.Exit_Btn.ForeColor = System.Drawing.Color.LightGray;
             this.Exit_Btn.Name = "Exit_Btn";
             this.Exit_Btn.UseVisualStyleBackColor = true;

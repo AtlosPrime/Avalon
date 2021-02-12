@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Net;
-using System.Diagnostics;
 using System.Windows.Forms;
-using System.Net.NetworkInformation;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.Win32;
+using Microsoft.VisualBasic;
+
+
 
 namespace Avalon
 {
@@ -27,6 +21,16 @@ namespace Avalon
             */
             // Active Computer Name = Tampon du changement jusqu'à restart
             // Computer Name = Changement
+
+
+            //HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters == True netbios? Automatic switch?
+            //NV Hostname == Ture Changement, if NV Hostname changed, == Computer name changé. If restart, ACN + Hostname changé
+            //Hostname == Tampon?
+            /*
+              string newName = "newName";
+              key.SetValue("Hostname", newName);
+              key.SetValue("NV Hostname", newName);
+             */
             string ACN = (string)Registry.GetValue(@"HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ComputerName\ActiveComputerName", "ComputerName", null);
             string CN = (string)Registry.GetValue(@"HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\ComputerName\ComputerName", "ComputerName", null);
 
@@ -46,19 +50,10 @@ namespace Avalon
             var _CurrentBuild = key.GetValue("CurrentBuild").ToString();
             string build = _CurrentBuild + "." + _UBR; // build
 
-            var key1 = Registry.LocalMachine.OpenSubKey(@"SYSTEM\CurrentControlSet\Control\Session Manager\Environment");
-            if (key1 == null)
-            {
-                RegistryKey key11 = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\Avalon");
-                key11.SetValue("Termsaccepted", "0");
-            }
-            else
-            {
-
-            }
 
             string Version = (string)Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion", "ProductName", null); // Version = Windows 'int' 'edition'
             label1.Text = ("Système d'exploitation : " + Version + " build " + build);
+
 
             string sys_man = (string)Registry.GetValue(@"HKEY_LOCAL_MACHINE\SYSTEM\HardwareConfig\Current", "SystemManufacturer", null);
             label7.Text = ("System Manufacturer : " + sys_man);
@@ -79,19 +74,6 @@ namespace Avalon
         private void Button5_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        public static void DisplayDnsConfiguration()
-        {
-            NetworkInterface[] adapters = NetworkInterface.GetAllNetworkInterfaces();
-            foreach (NetworkInterface adapter in adapters)
-            {
-                IPInterfaceProperties properties = adapter.GetIPProperties();
-                Debug.WriteLine(adapter.Description);
-                Debug.WriteLine("  DNS suffix .............................. : {0}", properties.DnsSuffix);
-                Debug.WriteLine("  DNS enabled ............................. : {0}", properties.IsDnsEnabled);
-                Debug.WriteLine("  Dynamically configured DNS .............. : {0}", properties.IsDynamicDnsEnabled);
-            }
         }
 
         private void GroupBox1_Enter(object sender, EventArgs e)
@@ -146,7 +128,21 @@ namespace Avalon
 
         private void label2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Voulez vous changer le nom de votre ordinateur.", "Êtes vous sûr?", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
+
+            string message = "Voulez vous changer le nom de votre ordinateur?";
+            string title = "T'es sûr khoya?";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SYSTEM\CurrentControlSet\Services\Tcpip\Parameters");
+                string input = Interaction.InputBox("Comment voulez vous le nommer?", "Comment?", "Netbios...");
+                key.SetValue("NV Hostname ", "DESKTOP-UVAR35");
+            }
+            else
+            {
+                // Do something  
+            }
         }
     }
 }
