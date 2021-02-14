@@ -64,5 +64,26 @@ namespace Avalon
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string message = "Attention, conformément au guide d'optimisation de CAPET, ces paramètres suivant vont être modifiés:\n\n-Passage en performances élevés\n-Empêcher le disque dur de s'arrêter au bout de 20 minutes\n-Paramètres de la suspension sélective USB désactivé\n-État minimal du processeur à 70%\n\nÊtes vous sûr de modifier ces paramètres?";
+            string title = "Attention";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+            
+            MessageBox.Show("Les paramètres ont été appliqués.", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+            //RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SYSTEM\CurrentControlSet\Services\Tcpip\Parameters");
+            //key.SetValue("NV Hostname ", "DESKTOP-UVAR35");
+
+            }
+            else
+            {
+                // Do something  
+            }
+        }
     }
 }

@@ -67,7 +67,7 @@ namespace Avalon
             titre.BringToFront();
 
             #endregion
-            LabelAvalonversion.Text = ("Avalon " + global::Avalon.Properties.Resources.version);
+            LabelAvalonversion.Text = "Avalon " + Properties.Resources.version;
 
         }
         private void Form1_Load(object sender, EventArgs e)

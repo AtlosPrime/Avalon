@@ -100,5 +100,10 @@ namespace Avalon
             }
             return path;
         }
+
+        private void Exit_Btn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

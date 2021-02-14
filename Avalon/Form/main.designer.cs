@@ -49,6 +49,7 @@
             this.Labeldesc = new System.Windows.Forms.Label();
             this.LabelAvalonversion = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoAvalon_PicBox)).BeginInit();
             this.MainPanel_Panel.SuspendLayout();
@@ -92,6 +93,7 @@
             // 
             // Menu_Panel
             // 
+            resources.ApplyResources(this.Menu_Panel, "Menu_Panel");
             this.Menu_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.Menu_Panel.Controls.Add(this.CGU_Btn);
             this.Menu_Panel.Controls.Add(this.Menu3_Panel);
@@ -102,15 +104,14 @@
             this.Menu_Panel.Controls.Add(this.Menu1_Panel);
             this.Menu_Panel.Controls.Add(this.Menu1_Btn);
             this.Menu_Panel.Controls.Add(this.panelLogo);
-            resources.ApplyResources(this.Menu_Panel, "Menu_Panel");
             this.Menu_Panel.Name = "Menu_Panel";
             this.Menu_Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainMenuPanel_Panel);
             // 
             // CGU_Btn
             // 
+            resources.ApplyResources(this.CGU_Btn, "CGU_Btn");
             this.CGU_Btn.FlatAppearance.BorderSize = 0;
             this.CGU_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            resources.ApplyResources(this.CGU_Btn, "CGU_Btn");
             this.CGU_Btn.ForeColor = System.Drawing.Color.LightGray;
             this.CGU_Btn.Name = "CGU_Btn";
             this.CGU_Btn.UseVisualStyleBackColor = true;
@@ -127,8 +128,8 @@
             // 
             // Menu3_2_Btn
             // 
-            this.Menu3_2_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             resources.ApplyResources(this.Menu3_2_Btn, "Menu3_2_Btn");
+            this.Menu3_2_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.Menu3_2_Btn.FlatAppearance.BorderSize = 0;
             this.Menu3_2_Btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
             this.Menu3_2_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
@@ -139,8 +140,8 @@
             // 
             // Menu3_1_Btn
             // 
-            this.Menu3_1_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             resources.ApplyResources(this.Menu3_1_Btn, "Menu3_1_Btn");
+            this.Menu3_1_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.Menu3_1_Btn.FlatAppearance.BorderSize = 0;
             this.Menu3_1_Btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
             this.Menu3_1_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
@@ -151,8 +152,8 @@
             // 
             // Menu3_Btn
             // 
-            this.Menu3_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.Menu3_Btn, "Menu3_Btn");
+            this.Menu3_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu3_Btn.FlatAppearance.BorderSize = 0;
             this.Menu3_Btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.Menu3_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
@@ -183,8 +184,8 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             resources.ApplyResources(this.button1, "button1");
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
@@ -195,8 +196,8 @@
             // 
             // Menu2_1_Btn
             // 
-            this.Menu2_1_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             resources.ApplyResources(this.Menu2_1_Btn, "Menu2_1_Btn");
+            this.Menu2_1_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.Menu2_1_Btn.FlatAppearance.BorderSize = 0;
             this.Menu2_1_Btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
             this.Menu2_1_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
@@ -207,8 +208,8 @@
             // 
             // Menu2_Btn
             // 
-            this.Menu2_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.Menu2_Btn, "Menu2_Btn");
+            this.Menu2_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Menu2_Btn.FlatAppearance.BorderSize = 0;
             this.Menu2_Btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.Menu2_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
@@ -228,8 +229,8 @@
             // 
             // Menu1_2_Btn
             // 
-            this.Menu1_2_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             resources.ApplyResources(this.Menu1_2_Btn, "Menu1_2_Btn");
+            this.Menu1_2_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.Menu1_2_Btn.FlatAppearance.BorderSize = 0;
             this.Menu1_2_Btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
             this.Menu1_2_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
@@ -240,8 +241,8 @@
             // 
             // Menu1_1_Btn
             // 
-            this.Menu1_1_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             resources.ApplyResources(this.Menu1_1_Btn, "Menu1_1_Btn");
+            this.Menu1_1_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.Menu1_1_Btn.FlatAppearance.BorderSize = 0;
             this.Menu1_1_Btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
             this.Menu1_1_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
@@ -274,6 +275,7 @@
             // 
             resources.ApplyResources(this.MainInformation_Panel, "MainInformation_Panel");
             this.MainInformation_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.MainInformation_Panel.Controls.Add(this.label11);
             this.MainInformation_Panel.Controls.Add(this.Monsite_UrlMain);
             this.MainInformation_Panel.Controls.Add(this.Labeldesc);
             this.MainInformation_Panel.Controls.Add(this.LabelAvalonversion);
@@ -310,6 +312,13 @@
             this.panel1.Name = "panel1";
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.BackColor = System.Drawing.Color.Red;
+            this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label11.Name = "label11";
+            // 
             // Main_Form
             // 
             resources.ApplyResources(this, "$this");
@@ -329,14 +338,19 @@
             this.MainPanel_Panel.ResumeLayout(false);
             this.MainPanel_Panel.PerformLayout();
             this.Menu_Panel.ResumeLayout(false);
+            this.Menu_Panel.PerformLayout();
             this.Menu3_Panel.ResumeLayout(false);
+            this.Menu3_Panel.PerformLayout();
             this.Menu2_Panel.ResumeLayout(false);
+            this.Menu2_Panel.PerformLayout();
             this.Menu1_Panel.ResumeLayout(false);
+            this.Menu1_Panel.PerformLayout();
             this.MainTruePanel_Panel.ResumeLayout(false);
             this.MainTruePanel_Panel.PerformLayout();
             this.MainInformation_Panel.ResumeLayout(false);
             this.MainInformation_Panel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -366,5 +380,6 @@
         private System.Windows.Forms.PictureBox LogoAvalon_PicBox;
         private System.Windows.Forms.Button CGU_Btn;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label11;
     }
 }

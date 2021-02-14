@@ -267,7 +267,7 @@ namespace Avalon
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.Exit_Btn);
             this.Controls.Add(this.PanelMenu);
-            this.Icon = global::Avalon.Properties.Resources.Ufopedia_Icon;
+            this.Icon = Avalon.Properties.Resources.Ufopedia_Icon;
             this.Name = "Ufopedia_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ufopedia";

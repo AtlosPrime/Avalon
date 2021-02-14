@@ -11,6 +11,9 @@ namespace Avalon
     public partial class InfoG_Form : Form
     {
 
+ 
+
+
         public InfoG_Form()
         {
             InitializeComponent();
@@ -24,7 +27,7 @@ namespace Avalon
 
 
             //HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters == True netbios? Automatic switch?
-            //NV Hostname == Ture Changement, if NV Hostname changed, == Computer name changé. If restart, ACN + Hostname changé
+            //NV Hostname == True Changement, if NV Hostname changed, == Computer name changé. If restart, ACN + Hostname changé
             //Hostname == Tampon?
             /*
               string newName = "newName";
@@ -52,17 +55,23 @@ namespace Avalon
 
 
             string Version = (string)Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion", "ProductName", null); // Version = Windows 'int' 'edition'
-            label1.Text = ("Système d'exploitation : " + Version + " build " + build);
+            label1.Text = "Système d'exploitation : " + Version + " build " + build;
 
 
             string sys_man = (string)Registry.GetValue(@"HKEY_LOCAL_MACHINE\SYSTEM\HardwareConfig\Current", "SystemManufacturer", null);
-            label7.Text = ("System Manufacturer : " + sys_man);
+            label7.Text = "System Manufacturer : " + sys_man;
 
             string sys_prod_name = (string)Registry.GetValue(@"HKEY_LOCAL_MACHINE\SYSTEM\HardwareConfig\Current", "SystemProductName", null); ;
-            label8.Text = ("System Product Name : " + sys_prod_name);
+            label8.Text = "System Product Name : " + sys_prod_name;
 
             string sys_family = (string)Registry.GetValue(@"HKEY_LOCAL_MACHINE\SYSTEM\HardwareConfig\Current", "SystemFamily", null); ;
-            label9.Text = ("System Family : " + sys_family);
+            label9.Text = "System Family : " + sys_family;
+
+
+
+            string CPU = (string)Registry.GetValue(@"HKEY_LOCAL_MACHINE\HARDWARE\DESCRIPTION\System\CentralProcessor\0", "ProcessorNameString", null);
+            label6.Text = "Processeur : " + CPU;
+
 
         }
 

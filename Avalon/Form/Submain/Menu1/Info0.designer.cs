@@ -32,15 +32,15 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.listBoxProgramms = new System.Windows.Forms.ListBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.btnDel = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Label = new System.Windows.Forms.Label();
             this.Exit_Btn = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
+            this.listBoxProgramms = new System.Windows.Forms.ListBox();
+            this.btnDel = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -62,7 +62,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.LightGray;
-            this.button8.Location = new System.Drawing.Point(164, 527);
+            this.button8.Location = new System.Drawing.Point(135, 1489);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(100, 40);
             this.button8.TabIndex = 16;
@@ -78,7 +78,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(368, 527);
+            this.button1.Location = new System.Drawing.Point(339, 1489);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 40);
             this.button1.TabIndex = 19;
@@ -103,6 +103,86 @@
             this.panel1.TabIndex = 20;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.LightGray;
+            this.btnAdd.Location = new System.Drawing.Point(180, 239);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(100, 40);
+            this.btnAdd.TabIndex = 27;
+            this.btnAdd.Text = "Ajouter";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.LightGray;
+            this.button3.Location = new System.Drawing.Point(274, 239);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(100, 40);
+            this.button3.TabIndex = 26;
+            this.button3.Text = "Désactiver";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(281, 902);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "label2";
+            // 
+            // panel2
+            // 
+            this.panel2.AutoSize = true;
+            this.panel2.Controls.Add(this.Label);
+            this.panel2.Controls.Add(this.Exit_Btn);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(492, 28);
+            this.panel2.TabIndex = 24;
+            // 
+            // Label
+            // 
+            this.Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Label.AutoSize = true;
+            this.Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.Label.ForeColor = System.Drawing.Color.Crimson;
+            this.Label.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Label.Location = new System.Drawing.Point(208, 3);
+            this.Label.Name = "Label";
+            this.Label.Size = new System.Drawing.Size(91, 25);
+            this.Label.TabIndex = 16;
+            this.Label.Text = "Autoruns";
+            // 
+            // Exit_Btn
+            // 
+            this.Exit_Btn.FlatAppearance.BorderSize = 0;
+            this.Exit_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
+            this.Exit_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Exit_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Exit_Btn.ForeColor = System.Drawing.Color.LightGray;
+            this.Exit_Btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Exit_Btn.Location = new System.Drawing.Point(0, 0);
+            this.Exit_Btn.Name = "Exit_Btn";
+            this.Exit_Btn.Size = new System.Drawing.Size(25, 25);
+            this.Exit_Btn.TabIndex = 15;
+            this.Exit_Btn.Text = "X";
+            this.Exit_Btn.UseVisualStyleBackColor = true;
+            this.Exit_Btn.Click += new System.EventHandler(this.Exit_Btn_Click);
+            // 
             // listBoxProgramms
             // 
             this.listBoxProgramms.FormattingEnabled = true;
@@ -112,6 +192,22 @@
             this.listBoxProgramms.Size = new System.Drawing.Size(300, 199);
             this.listBoxProgramms.TabIndex = 21;
             this.listBoxProgramms.SelectedIndexChanged += new System.EventHandler(this.listBoxProgramms_SelectedIndexChanged_1);
+            // 
+            // btnDel
+            // 
+            this.btnDel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.btnDel.FlatAppearance.BorderSize = 0;
+            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.ForeColor = System.Drawing.Color.LightGray;
+            this.btnDel.Location = new System.Drawing.Point(381, 239);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(100, 40);
+            this.btnDel.TabIndex = 23;
+            this.btnDel.Text = "Supprimer";
+            this.btnDel.UseVisualStyleBackColor = false;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // listBox1
             // 
@@ -185,101 +281,6 @@
             this.listBox1.ScrollAlwaysVisible = true;
             this.listBox1.Size = new System.Drawing.Size(468, 199);
             this.listBox1.TabIndex = 22;
-            // 
-            // btnDel
-            // 
-            this.btnDel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.btnDel.FlatAppearance.BorderSize = 0;
-            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDel.ForeColor = System.Drawing.Color.LightGray;
-            this.btnDel.Location = new System.Drawing.Point(380, 239);
-            this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(100, 40);
-            this.btnDel.TabIndex = 23;
-            this.btnDel.Text = "Supprimer";
-            this.btnDel.UseVisualStyleBackColor = false;
-            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.AutoSize = true;
-            this.panel2.Controls.Add(this.Label);
-            this.panel2.Controls.Add(this.Exit_Btn);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(492, 28);
-            this.panel2.TabIndex = 24;
-            // 
-            // Label
-            // 
-            this.Label.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Label.AutoSize = true;
-            this.Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.Label.ForeColor = System.Drawing.Color.Crimson;
-            this.Label.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label.Location = new System.Drawing.Point(208, 3);
-            this.Label.Name = "Label";
-            this.Label.Size = new System.Drawing.Size(91, 25);
-            this.Label.TabIndex = 16;
-            this.Label.Text = "Autoruns";
-            // 
-            // Exit_Btn
-            // 
-            this.Exit_Btn.FlatAppearance.BorderSize = 0;
-            this.Exit_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.Exit_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Exit_Btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Exit_Btn.ForeColor = System.Drawing.Color.LightGray;
-            this.Exit_Btn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Exit_Btn.Location = new System.Drawing.Point(0, 0);
-            this.Exit_Btn.Name = "Exit_Btn";
-            this.Exit_Btn.Size = new System.Drawing.Size(25, 25);
-            this.Exit_Btn.TabIndex = 15;
-            this.Exit_Btn.Text = "X";
-            this.Exit_Btn.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(281, 902);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "label2";
-            // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.LightGray;
-            this.button3.Location = new System.Drawing.Point(274, 239);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 40);
-            this.button3.TabIndex = 26;
-            this.button3.Text = "Désactiver";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.LightGray;
-            this.btnAdd.Location = new System.Drawing.Point(180, 239);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(100, 40);
-            this.btnAdd.TabIndex = 27;
-            this.btnAdd.Text = "Ajouter";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // Info00_Form
             // 
